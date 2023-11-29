@@ -3,10 +3,10 @@ package etities;
 import java.util.Random;
 
 public class Rettangolo {
-    public int altezza;
-    public int larghezza;
-    public int altezza2;
-    public int larghezza2;
+    private int altezza;
+    private int larghezza;
+    private int altezza2;
+    private int larghezza2;
     private int id;
 
     public Rettangolo(int altezza, int larghezza){
