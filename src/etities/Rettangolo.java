@@ -24,7 +24,6 @@ public class Rettangolo {
         this.id = r.nextInt(1,1000000);
     }
 
-
     public void stampaRettangolo(){
         System.out.println("Area:"+ ((this.larghezza * this.altezza )*2));
         System.out.println("Perimetro:"+((this.altezza + this.larghezza)*2));
