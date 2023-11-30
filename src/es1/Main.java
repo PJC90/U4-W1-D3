@@ -1,3 +1,5 @@
+package es1;
+
 import etities.Chiamataq;
 import etities.Rettangolo;
 import etities.Sim;
@@ -19,13 +21,6 @@ public class Main {
         System.out.println(b.getAltezza());
         b.setAltezza(11);
         System.out.println(b.getAltezza());
-        Sim z = new Sim(3331212);
-
-        Chiamataq c1 = new Chiamataq(111,2);
-        Chiamataq c2 = new Chiamataq(222, 50);
-        z.chiamate = new Chiamataq[]{c1,c2};
-        z.stampaSim();
-
     }
 }
 
