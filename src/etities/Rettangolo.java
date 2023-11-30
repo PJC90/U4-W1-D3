@@ -1,5 +1,6 @@
 package etities;
 
+import java.util.Objects;
 import java.util.Random;
 
 public class Rettangolo {
@@ -24,6 +25,14 @@ public class Rettangolo {
         this.id = r.nextInt(1,1000000);
     }
 
+    public int getAltezza() {
+        return altezza;
+    }
+
+    public void setAltezza(int altezza) {
+        this.altezza = altezza;
+    }
+
     public void stampaRettangolo(){
         System.out.println("Area:"+ ((this.larghezza * this.altezza )*2));
         System.out.println("Perimetro:"+((this.altezza + this.larghezza)*2));
@@ -36,4 +45,14 @@ public class Rettangolo {
         System.out.println("somma areee:"+ (((this.larghezza * this.altezza )*2)+((this.larghezza2 * this.altezza2 )*2)));
         System.out.println("somma perimetri:"+(((this.altezza + this.larghezza)*2)+((this.altezza2 + this.larghezza2)*2)));
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rettangolo that = (Rettangolo) o;
+        return altezza == that.altezza && larghezza == that.larghezza && altezza2 == that.altezza2 && larghezza2 == that.larghezza2;
+    }
+
+
 }

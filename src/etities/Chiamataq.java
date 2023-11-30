@@ -14,4 +14,12 @@ public class Chiamataq {
     public int getDurata(){
         return durata;
     }
+
+    @Override
+    public String toString() {
+        return "Chiamataq{" +
+                "numero=" + numero +
+                ", durata=" + durata +
+                '}';
+    }
 }
